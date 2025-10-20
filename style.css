@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f6f2;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 10px;
+  position: relative;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #2f2f2f;
+  letter-spacing: 1px;
+}
+
+.decor-left, .decor-right {
+  font-size: 2rem;
+  color: #7ec8e3;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  width: 80%;
+  max-width: 700px;
+  margin: 60px auto;
+}
+
+.card {
+  border-radius: 20px;
+  padding: 40px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Colors */
+.blue {
+  background-color: #7ec8e3;
+}
+
+.orange {
+  background-color: #f5a25d;
+}
+
+.purple {
+  background-color: #c5a3e2;
+}
+
+/* Optional subtle glow on hover */
+.card:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Team Members Page */
+.team-container {
+  background-color: #f8f6f2;
+  border: 3px solid #b16bff;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.team-title {
+  font-family: "Pacifico", cursive;
+  color: #a25ce2;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+.team-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto 30px auto;
+}
+
+.team-table th {
+  border: 2px solid #000;
+  padding: 10px;
+  background-color: #f4eadc;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+.team-table td {
+  border: 2px solid #000;
+  padding: 20px;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+.decorations {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.leaf {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 2rem;
+  color: #c5a3e2;
+}
+
+.atom {
+  font-size: 2.2rem;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  color: white;
+  background-color: #b16bff;
+  padding: 10px 25px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #8d4bd1;
+}
+
